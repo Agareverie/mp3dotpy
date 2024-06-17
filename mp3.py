@@ -16,7 +16,7 @@ def download(urls: list) -> None:
             
         except KeyError:
             print("Unable to fetch video information. Please check the video URL or your network connection.")
-            return "Download Stopped, Please try again."
+            return None
         
     print("Successfully downloaded your video(s).")
     return None
